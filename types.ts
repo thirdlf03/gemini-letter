@@ -10,3 +10,10 @@ export enum Mood {
   HAPPY = 'うれしい日',
   TIRED = 'おつかれな日',
 }
+
+export interface SavedLetter {
+  id: number;
+  mood: Mood | string;
+  content: string;
+  date: string;
+}
